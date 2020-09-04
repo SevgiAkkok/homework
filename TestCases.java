@@ -28,7 +28,7 @@ public class TestCases extends BaseTest{
 	public void test_1_signIn()
 	{
 		LoginPage loginPage=new LoginPage(driver);
-		loginPage.enterLoginForm("akkoksevgi@mail.com", "S12345");
+		loginPage.enterLoginForm("akkoksevgi@mail.com", "n11");
 		loginPage.submit();
 		//loginPage.waitForPageLoad();
 		Assert.assertTrue(loginPage.getUserName().equals("Sevgi Akkök"));
